@@ -16,17 +16,17 @@ describe('index.js', function () {
     });
   });
 
-  describe('mostProfitableNeighborhood', function () {
+  describe('mostProfitableNeigh
+
+    it('is not defined as a const', function () {
+      expect(js).not.to.matchborhood', function () {
     it('is declared as equal to Chelsea', function () {
       expect(mostProfitableNeighborhood).to.equal('Chelsea');
     });
 
     it('does not raise error if the mostProfitableNeighborhood is changed', function () {
       expect(function () { mostProfitableNeighborhood = 'Upper West Side' }).to.not.throw(TypeError);
-    });
-
-    it('is not defined as a const', function () {
-      expect(js).not.to.match(/const mostProfitableNeighborhood/, "Expected mostProfitableNeighborhood not to be a const");
+    });(/const mostProfitableNeighborhood/, "Expected mostProfitableNeighborhood not to be a const");
     });
   });
 
